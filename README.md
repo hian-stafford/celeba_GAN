@@ -1,14 +1,23 @@
 # Gerador de Imagens com DCGAN no Dataset CelebA
 
-Este projeto implementa uma **Rede Generativa Adversarial Profunda (DCGAN)** para geração de imagens de rostos humanos, utilizando o dataset **CelebA**. O modelo foi treinado para aprender a distribuir imagens realistas a partir de vetores de ruído aleatório.
+Este projeto apresenta a implementação de uma **Rede Generativa Adversarial Profunda** (*Deep Convolutional Generative Adversarial Network – DCGAN*) com o objetivo de **gerar imagens sintéticas de rostos humanos** a partir de vetores de ruído aleatório. Utilizando o **dataset CelebFaces Attributes (CelebA)**, composto por milhares de imagens de rostos de celebridades, o modelo foi treinado para **aprender a distribuição de probabilidade das imagens reais**, permitindo a geração de novas amostras visuais com características fotorrealistas.
+
+O treinamento seguiu as **práticas recomendadas para GANs**, incluindo o uso de **camadas convolucionais profundas** e **funções de ativação adequadas**, resultando em um gerador capaz de produzir imagens de alta qualidade. Este trabalho demonstra o potencial das **redes generativas adversariais** na **síntese de imagens realistas** e na **modelagem de distribuições complexas de dados visuais**.
+
+---
 
 ## 📄 Sobre o Projeto
 
-As **GANs (Generative Adversarial Networks)** são uma abordagem revolucionária de aprendizado profundo, onde duas redes neurais (Gerador e Discriminador) competem entre si: o Gerador tenta criar imagens cada vez mais realistas, enquanto o Discriminador tenta identificar quais imagens são reais e quais são geradas.  
+As **GANs (Generative Adversarial Networks)** são uma abordagem inovadora de **aprendizado profundo**, composta por duas redes neurais:
 
-Neste trabalho, foi utilizada uma **DCGAN (Deep Convolutional GAN)**, que explora **camadas convolucionais profundas** no Gerador e Discriminador para aumentar a qualidade das imagens.
+* **Gerador**: responsável por criar imagens sintéticas a partir de vetores de ruído.
+* **Discriminador**: encarregado de distinguir entre imagens reais e imagens geradas.
 
-O objetivo principal foi **gerar imagens de rostos humanos** com qualidade crescente ao longo das épocas de treinamento, começando de ruídos até imagens mais coerentes.
+Essas redes são treinadas de forma **adversarial**, ou seja, competindo entre si: o Gerador busca enganar o Discriminador com imagens cada vez mais realistas, enquanto o Discriminador tenta aprimorar sua capacidade de identificação.
+
+Neste projeto, foi utilizada uma **DCGAN (Deep Convolutional GAN)**, que incorpora **camadas convolucionais profundas** no Gerador e no Discriminador, aprimorando a qualidade das imagens geradas e estabilizando o treinamento.
+
+O objetivo central foi **gerar imagens de rostos humanos com qualidade progressivamente melhor ao longo das épocas de treinamento**, partindo de padrões aleatórios de ruído até alcançar imagens com **coerência visual e realismo aprimorado**.
 
 ---
 
